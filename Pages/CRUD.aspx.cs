@@ -11,7 +11,7 @@ namespace CRUD.Pages
     {
 
         readonly SqlConnection con = ConexionBD.Instance.GetConnection();
-
+        
 
         public static string sID = "-1";
        public static string sOpc = "";

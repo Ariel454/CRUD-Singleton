@@ -11,12 +11,10 @@ namespace CRUD.Pages
     public class ConexionBD
     {
         private static ConexionBD instance;
-        // private SqlConnection conectarbd;
         private readonly SqlConnection con; 
 
         private ConexionBD()
         {
-            //string cadena = "Data Source=UPOAULA10710; Initial Catalog=DWQueue; Integrated Security=True";
             con = new SqlConnection(ConfigurationManager.ConnectionStrings["conexion"].ConnectionString);
         }
 
